@@ -5,24 +5,30 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   const incCounter = ()=>{
-    // setCounter(counter==20?20:counter + 1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
 
-    if(counter == 20){
-      alert("Maximum Limit Reached");
-    }else{
-      setCounter(counter+1);
-    }
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+    setCounter((prevCounter) => prevCounter+1);
+  
   }
 
    const decCounter = ()=>{
-    // setCounter(counter==0?0:counter - 1);
+      // setCounter(counter-1);
+      // setCounter(counter-1);
+      // setCounter(counter-1);
+      // setCounter(counter-1);
 
-    if(counter == 0){
-      alert("Minimum Limit Reached");
-    }else{
-      setCounter(counter-1);
+      setCounter(prevCounter => prevCounter-1);
+      setCounter(prevCounter => prevCounter-1);
+      setCounter(prevCounter => prevCounter-1);
+      setCounter(prevCounter => prevCounter-1);
     }
-  }
+  
 
   return (
     <>
